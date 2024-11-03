@@ -57,14 +57,65 @@ When the docker container starts, it creates database named __w3schools__ with t
 and inserts the respective data. 
 
 ## Features
-1. Get and list all categories
-2. Create a new category
-3. Update an existing category
-4. Delete a category
-5. Give an error message to the user when trying to delete a category that can't be deleted
+1. Get and list all customers 
+2. Get and list all categories
+3. Get and list all employees
+4. Create (Add) a new customers
+5. Create (Add) a new categories
+6. Update (Edit) an existing customers
+7. Update (Edit) an existing categories
+8. Delete a customers
+9. Delete a categories
+10. Sort Alphabetically (A-Z, Z-A) 
+11. Pagination
+12. Refresh list    
 
 ## Journal
-### 14.09.2024
-The project setup was quite difficult, as I am missing some linux and docker experience.
-After some try and errors and support from ChatGPT I made it finally work
+### 30.10.2024
+Setting up the project was initially challenging due to my limited experience with Linux and Docker. I faced several issues with the scripts not working and the project failing to start. After some trial and error and guidance from ChatGPT, I identified missing dependencies and applications, particularly around Docker and Node.js. Once I reinstalled Node.js and resolved these issues, the project setup ran smoothly and I was able to get everything working as expected.
 
+### 02.11.2024
+
+After conducting research on routing, I implemented routing functionality to enhance navigation within the application. Below are the newly integrated features:
+
+1. **Get and List All Entities**
+     - **Customers**
+     - **Categories**
+     - **Employees**
+   - Utilized GET methods to retrieve and display data in organized tables for each entity.
+
+2. **Create (Add) New Entries**
+   - Enabled creation of new entries for:
+     - **Customers**
+     - **Categories**
+     - **Employees**
+   - Implemented POST methods for adding new records directly from the application.
+
+3. **Update (Edit) Existing Entries**
+   - Implemented PATCH methods to allow in-place updates for individual records in:
+     - **Customers**
+     - **Categories**
+
+4. **Delete Entries**
+   - Set up DELETE methods to remove records for:
+     - **Customers**
+     - **Categories**
+
+5. **Sorting Functionality**
+   - Added sorting functionality to all tables. Clicking on table headers allows sorting columns alphabetically (A-Z or Z-A) for easy data organization.
+
+6. **Pagination**
+   - Implemented pagination to handle large datasets, with Previous and Next buttons for smooth navigation across pages.
+
+7. **Refresh List**
+   - Added a Refresh button to reload data, ensuring that the list reflects the latest updates instantly.
+
+8. **Filtering**
+   - Integrated a filtering feature to enable users to quickly search within each entity’s list for specific entries.
+
+## Documentation
+
+- Wrote technical documentation detailing the API methods (GET, POST, PATCH, DELETE) for managing Customers, Categories, and Employees.
+- Documented all new features and updated the project journal.
+
+These additions greatly enhance usability, providing a seamless experience for managing data across all entities.
