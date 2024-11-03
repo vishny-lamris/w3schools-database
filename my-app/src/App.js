@@ -18,7 +18,7 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<h1>Welcome to My App</h1>} />
+        <Route path="/" element={<h1>Welcome to Shipping Company</h1>} />
         <Route path="/customers" element={<CustomersList />} />
         <Route path="/categories" element={<CategoriesList />} />
         <Route path="/employees" element={<EmployeesList />} /> {/* New route for EmployeesList */}
